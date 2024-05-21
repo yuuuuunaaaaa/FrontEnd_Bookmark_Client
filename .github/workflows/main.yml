@@ -31,7 +31,7 @@ jobs:
         run: echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
 
       - name: Build Docker image
-        run: docker build . --file Dockerfile --tag yuuuuunaaaaa/springboonextjs:client0.2
+        run: docker build . --file Dockerfile --tag yuuuuunaaaaa/springbootnextjs:client0.2
 
       - name: Push to Docker Hub
-        run: docker push yuuuuunaaaaa/springboonextjs:client0.2
+        run: docker push yuuuuunaaaaa/springbootnextjs:client0.2
